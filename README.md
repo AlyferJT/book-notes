@@ -32,7 +32,7 @@ npm i
 
 3 - Check that inside the [DATABASE](https://github.com/AlyferJT/book_notes/tree/main/DATABASE) folder, contains the [database.sql](https://github.com/AlyferJT/book_notes/blob/main/DATABASE/database.sql) file
 
-4 - Open the pgAdmin and create a database, you can call it however you want, but don't forget to change the database settings on [index.js](https://github.com/AlyferJT/book_notes/blob/main/index.js)
+4 - Open the [pgAdmin](https://www.pgadmin.org/download/) and create a database, you can call it however you want, but don't forget to change the database settings on [index.js](https://github.com/AlyferJT/book_notes/blob/main/index.js)
 
 5 - Well, the database settings, has i mentioned before, has the following pattern
 ```bash
