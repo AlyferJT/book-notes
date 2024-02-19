@@ -46,8 +46,9 @@ const db = new pg.Client({
 ```
 6 - Finally, if all has been successfully made, the server is ready to run
 
-7 - Now, run nodemon
+7 - Now, run nodemon, if you haven't installed it, run the following commands
 ```bash
+npm i nodemon -g
 nodemon ./index.js
 ```
 8 - Open [localhost:3000](http://localhost:3000/) on your browser
