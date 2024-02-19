@@ -1,12 +1,17 @@
 # BOOK NOTES PROJECT
 
 Hi there, my name is Alyfer 🤗
+
 This is my first FullStack project
+
 I really struggled on that one
+
 And i'm showing here, the BOOK NOTES PROJECT
 
 This BOOK NOTES is a localhost server
+
 So, it will only work for you, you can try to host that online, but it's a single user database
+
 Or you can edit the code and add user authentication
 
 ANY DOUBTS, YOU CAN CALL ME ON [DISCORD](https://discord.gg/QvqQQwd27K)
@@ -14,6 +19,7 @@ ANY DOUBTS, YOU CAN CALL ME ON [DISCORD](https://discord.gg/QvqQQwd27K)
 ## Project functionality
 
 In that project you can manage notes to books that you've read
+
 You can CREATE, VIEW, EDIT and DELETE all the notes you want
 
 ## Installation
