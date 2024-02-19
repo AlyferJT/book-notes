@@ -27,8 +27,8 @@ npm i
 ```bash
 const db = new pg.Client({
     user: 'postgres',                      '---------------------------------'
-    password: 'DATABASE YOU CREATED',      '---- YOU NEED TO CHANGE THIS ----'
-    database: 'PASSWORD YOU CREATED',      '---- TO MATCH YOUR DATABASE  ----'
+    password: 'PASSWORD YOU CREATED',      '---- YOU NEED TO CHANGE THIS ----'
+    database: 'DATABASE YOU CREATED',      '---- TO MATCH YOUR DATABASE  ----'
     host: 'localhost',                     '---------------------------------'
     port: 5432
 });
