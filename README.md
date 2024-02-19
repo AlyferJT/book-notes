@@ -43,4 +43,4 @@ nodemon ./index.js
 
 This should appear on you browser, and it's ready to use
 
-![website preview](https://cdn.discordapp.com/attachments/1208968709087957003/1208968725168918579/image.png?ex=65e536dd&is=65d2c1dd&hm=0a6d80577fddd8e544d0d482a565a9d4ba55a601004159d3057c6b57c5c992c5&)
+![website preview](https://cdn.discordapp.com/attachments/1208968709087957003/1208969295795589120/image.png?ex=65e53765&is=65d2c265&hm=a955b33827dec53c4cc39cbbccfe7289d5457b211919342fb708f6cb65be8161&)
