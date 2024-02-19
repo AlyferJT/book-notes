@@ -13,8 +13,7 @@ ANY DOUBTS, YOU CAN CALL ME ON [DISCORD](https://discord.gg/QvqQQwd27K)
 
 ## Project functionality
 
-In that project you can create notes to books that you've read
-
+In that project you can manage notes to books that you've read
 You can CREATE, VIEW, EDIT and DELETE all the notes you want
 
 ## Installation
