@@ -28,7 +28,7 @@ You can CREATE, VIEW, EDIT and DELETE all the notes you want
 npm i
 ```
 
-2 - Download and install [PostgreSQL](https://www.pgadmin.org/download/), that's the database
+2 - Download and install [pgAdmin](https://www.pgadmin.org/download/), that's the database (PostgreSQL)
 
 3 - Check that inside the [DATABASE](https://github.com/AlyferJT/book_notes/tree/main/DATABASE) folder, contains the [database.sql](https://github.com/AlyferJT/book_notes/blob/main/DATABASE/database.sql) file
 
