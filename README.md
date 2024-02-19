@@ -1,1 +1,1 @@
-# book_notes
+# BOOK NOTES PROJECT
