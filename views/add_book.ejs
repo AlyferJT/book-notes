@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Form</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body class="body_form">
+    <main class="bookForm_box">
+        <form class="bookForm" action="/addbook" method="POST">
+            <input class="bookForm_text bookForm_item" type="text" name="book_isbn" placeholder="Book ISBN" required>
+            <input class="bookForm_text bookForm_item" type="text" name="book_title" placeholder="Title" required>
+            <textarea class="bookForm_textarea bookForm_item" name="book_description" placeholder="What do you say about the book?" minlength="10" required></textarea>
+            
+            <div class="rating_box">
+                <div class="rating">
+                    <label class="angry">
+                        <input type="radio" value="1" name="book_rating" />
+                        <div>
+                            <svg class="eye left">
+                                <use xlink:href="#eye">
+                            </svg>
+                            <svg class="eye right">
+                                <use xlink:href="#eye">
+                            </svg>
+                            <svg class="mouth">
+                                <use xlink:href="#mouth">
+                            </svg>
+                        </div>
+                    </label>
+                    <label class="sad">
+                        <input type="radio" value="2" name="book_rating" />
+                        <div>
+                            <svg class="eye left">
+                                <use xlink:href="#eye">
+                            </svg>
+                            <svg class="eye right">
+                                <use xlink:href="#eye">
+                            </svg>
+                            <svg class="mouth">
+                                <use xlink:href="#mouth">
+                            </svg>
+                        </div>
+                    </label>
+                    <label class="ok">
+                        <input type="radio" value="3" name="book_rating" checked/>
+                        <div></div>
+                    </label>
+                    <label class="good">
+                        <input type="radio" value="4" name="book_rating" />
+                        <div>
+                            <svg class="eye left">
+                                <use xlink:href="#eye">
+                            </svg>
+                            <svg class="eye right">
+                                <use xlink:href="#eye">
+                            </svg>
+                            <svg class="mouth">
+                                <use xlink:href="#mouth">
+                            </svg>
+                        </div>
+                    </label>
+                    <label class="happy">
+                        <input type="radio" value="5" name="book_rating" />
+                        <div>
+                            <svg class="eye left">
+                                <use xlink:href="#eye">
+                            </svg>
+                            <svg class="eye right">
+                                <use xlink:href="#eye">
+                            </svg>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 4" id="eye">
+                    <path d="M1,1 C1.83333333,2.16666667 2.66666667,2.75 3.5,2.75 C4.33333333,2.75 5.16666667,2.16666667 6,1"></path>
+                </symbol>
+                <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 7" id="mouth">
+                    <path d="M1,5.5 C3.66666667,2.5 6.33333333,1 9,1 C11.6666667,1 14.3333333,2.5 17,5.5"></path>
+                </symbol>
+            </svg>
+            
+        
+            <button class="bookForm_submit">SEND</button>
+
+        </form>
+    </main>
+</body>
+</html>

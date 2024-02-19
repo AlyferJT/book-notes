@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booknotes</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    <header class="header">
+        <form action="/add">
+            <button class="addButton">Add book</button>
+        </form>
+
+        <form action="/sort" method="POST" class="sortForm" >
+            <select class="selectList" name="by">
+                <option <%if(locals.by == 'id'){%>selected<%}%> value="id">Recently added</option>
+                <option <%if(locals.by == 'book_title'){%>selected<%}%> value="book_title">Title name</option>
+                <option <%if(locals.by == 'book_rating'){%>selected<%}%> value="book_rating">Rating</option>
+            </select>
+            <select class="selectList" name="order" id="">
+                <option <%if(locals.order == 'ASC'){%>selected<%}%> value="ASC">Ascending</option>
+                <option <%if(locals.order == 'DESC'){%>selected<%}%> value="DESC">Descending</option>
+            </select>
+            <input class="sortByBtn" class="submitBtn" type="submit" value="🔎">
+        </form>
+    </header>
+    
+
+    <% for(let book of bookList){ %>
+    
+        <section class="bookContainer">
+
+            <div class="bookCape_box">
+                <img class="bookCape_img" src="<%= book.book_cover %>" alt="book <%= book.book_title %>">
+                <p class="bookCape_ISBN">Book ISBN: <%= book.book_isbn %></p>
+                <p class="bookCape_Date">Book added in: <%= book.book_date %></p>
+                <div class="bookCape_actionForms">
+
+                    <form action="/edit" method="POST">
+                        <button class="bookCape_actionForms_edit" name="id" value="<%= book.id %>">EDIT</button>
+                    </form>
+
+                    <form action="/deletebook" method="POST">
+                        <button class="bookCape_actionForms_delete" name="id" value="<%= book.id %>">DELETE</button>
+                    </form>
+
+                </div>
+            </div>
+
+            <div class="bookInfo_box">
+                
+                <section class="bookInfoDescription">
+                    <h2 class="bookInfoDescription_title"><%= book.book_title %></h2>
+                    <p class="bookInfoDescription_text"><%= book.book_description %></p>
+                </section>
+                <section class="bookInfoRating">
+                    <p class="bookInfoRating_rating">Your rating:
+                        <% for (let i = 0; i < book.book_rating; i++) {%>
+                        <img class="bookInfoRating_rating_star" src="./image/star.png" alt="rating star">
+                        <% } %>
+                    </p>
+
+                </section>
+
+            </div>
+
+        </section>
+    <% } %>
+</body>
+</html>
