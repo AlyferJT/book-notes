@@ -4,7 +4,7 @@ Hi there, my name is Alyfer 🤗
 
 This is my first FullStack project
 
-And i'm showing it here, the BOOK NOTES PROJECT
+And i'm showing it here, the [BOOK NOTES PROJECT](https://github.com/AlyferJT/book_notes/)
 
 This BOOK NOTES is a localhost server
 
